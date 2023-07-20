@@ -1,0 +1,48 @@
+.user {
+  display: grid;
+  grid-template: auto / 100px repeat(4, minmax(0, 1fr)) 100px;
+  justify-content: space-between;
+  // padding: 0 20px;
+
+  width: 100%;
+
+  div {
+    &:not(:first-child) {
+      padding-left: 12px;
+    }
+  }
+
+  .date {
+    // text-align: right;
+  }
+
+  .action {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      transition: all 0.3s ease;
+    }
+
+    .edit {
+      &:hover {
+        fill: var(--color-purple-primary);
+        background-color: var(--color-purple-clear);
+      }
+    }
+
+    .delete {
+      &:hover {
+        fill: #cc4040;
+        background-color: #ffe3e3;
+      }
+    }
+  }
+}

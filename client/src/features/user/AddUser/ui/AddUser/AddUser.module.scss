@@ -1,0 +1,41 @@
+.button {
+  max-width: 100%;
+  height: 28px;
+  padding: 0 12px;
+
+  font-size: 12px;
+  font-weight: 700;
+  color: #40cc40;
+  border: 1px solid #40cc40;
+  background-color: #e9ffe3;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-top: 20px;
+  .create {
+    max-width: 100%;
+    height: 28px;
+    padding: 0 12px;
+
+    font-size: 12px;
+    font-weight: 700;
+    color: #40cc40;
+    border: 1px solid #40cc40;
+    background-color: #e9ffe3;
+  }
+
+  .cancel {
+    max-width: 100%;
+    height: 28px;
+    padding: 0 12px;
+
+    font-size: 12px;
+    font-weight: 700;
+    color: #cc4040;
+    border: 1px solid #cc4040;
+    background-color: #ffe3e3;
+  }
+}
