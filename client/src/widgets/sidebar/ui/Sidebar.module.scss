@@ -1,0 +1,59 @@
+.sidebar {
+  max-height: calc(100vh - 40px);
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-purple-primary);
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 100px;
+
+    &__link {
+      display: flex;
+      align-items: center;
+
+      width: 100%;
+      height: 48px;
+      padding: 0 20px;
+      border-radius: 16px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: var(--color-purple-clear);
+      }
+
+      &.current {
+        color: #fff;
+        background-color: var(--color-purple-primary);
+      }
+    }
+  }
+
+  .button {
+    width: 100px;
+    height: 36px;
+    margin-top: auto;
+    color: #fff;
+    background-color: var(--color-purple-primary);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: var(--color-purple-hover);
+    }
+  }
+}
